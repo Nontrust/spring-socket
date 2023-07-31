@@ -18,7 +18,7 @@ public class WebSocketConfig implements WebSocketConfigurer {
         registry.addHandler(webSocketHandlerCustom(), "/socket")
                 .addInterceptors(new HttpSessionHandshakeInterceptor())
                 // Todo: 도메인 및 https 통신 설정 필요
-                .setAllowedOrigins("*").withSockJS();
+                .setAllowedOriginPatterns("*").withSockJS();
     }
 
     @Bean

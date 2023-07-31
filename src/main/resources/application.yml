@@ -1,1 +1,7 @@
+server:
+  port: 8080                # to test http Socket Layer
+#  port: 8443                # for https SSL/TLS
 
+#spring:
+#  websocket:
+#    path: /ws
